@@ -1,0 +1,50 @@
+{% extends "yous/layout_2_col.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block navigation %}
+{% include "yous/tina/partials/nav_primary.html" %}
+{% endblock %}
+
+
+{% block header %}
+<h3 class="navbar navbar-inverse">Vous avez un Machouhouli ? Vous êtes au bon endroit!</h3>
+{% endblock %}
+
+
+{% block column_left %}
+
+<div class="container-fluid image">
+  <div class="row">
+<a href="{% url 'catalogue:index' %}">
+  <img  class="col-xs-12 col-sm-12" src="{% static "yous/image/img/marketing.jpg" %}" alt=" Comores En Ligne"></a>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<p>Notre objectif est de faciliter la vie de la diaspora comorienne. Vous avez un Machouhouli! Vous voulez que tout soit bien organisé en avance sans surprise? Vous voulez que le riz, farine, sucre, huile, etc., soient disponibles sans rupture tout au long de votre machuhuli?<br />
+  Vous êtes au bon endroit! Comores En Ligne est votre solution sur mesure. <br /> <br />
+  Contactez Comores En Ligne pour tout organiser pour vous. 
+  <br /><br />
+</p>
+<p> Pour plus d'informations, contactez notre service commerciale</p>
+
+<h4 class="navbar navbar-inverse">Nous contacter par email </h4>
+  L'adresse de contact Comores En Ligne pour Machouhouli:
+  
+  <ul>
+    <li><strong>comenligne.info@gmail.com</strong></li>
+  </ul>
+  Dites nous ce que vous avez besoins par email et à quel heure on peut vous joindre par téléphone. Nous vous repondrons dans les plus bref délais.
+</p>
+<p> <h4 class="navbar navbar-inverse">Nous contacter par téléphone</h4>
+				       
+  Nous sommes joignables par téléphone de 17h à 00h00.<br />
+  <ul>
+    <li><strong>Naoufad Saandi</strong>:         06 51 93 37 48</li>
+    <li><strong>Nirsoih Losri Ibrahima</strong>: 06 50 73 05 31</li>
+  </ul>
+
+
+{% endblock content %}

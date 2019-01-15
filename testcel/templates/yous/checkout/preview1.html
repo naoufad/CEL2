@@ -1,0 +1,28 @@
+{% extends 'yous/checkout/preview2.html' %}
+{% load currency_filters %}
+{% load i18n %}
+
+{% block payment_method %}
+<div class="span6">
+  <div class="sub-header">
+    <h2>Paiement</h2>
+  </div>
+  <div class="well well-success">
+    <p>Paiement avec votre compte MpessaOnLine</p>
+    <ul>
+      {% for code, amount in account_allocations.items %}
+      <li>Cliquer &laquoPasser la commande&raquo en bas et {{ amount|currency }} Seront prélevé sur votre compte MpessaOnLine numéro {{ code }} </li>
+      {% endfor %}
+    </ul>
+    
+    <div class="alert-actions">
+      <a href="{% url 'checkout:payment-details' %}" class="btn">{% trans "Change payment details" %}</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block hiddenforms %}
+{{ bankcard_form.as_p }}
+{{ billing_address_form.as_p }}
+{% endblock %}

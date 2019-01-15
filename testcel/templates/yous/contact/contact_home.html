@@ -1,0 +1,72 @@
+{% extends "yous/layout_2_col.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block navigation %}
+{% include "yous/tina/partials/nav_primary.html" %}
+{% endblock %}
+
+{% block header %}
+<h3 class="navbar navbar-inverse"> Alors comment nous contacter?</h3>
+{% endblock %}
+
+{% block column_left %}
+<div class="container-fluid image">
+  <div class="row">
+    
+
+<a href="{% url 'catalogue:index' %}">
+  <img class="col-xs-12 col-sm-12" src="{% static "yous/image/img/marketing.jpg" %}" alt=" Comores En Ligne">
+</a>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+<p>Tout d'abord, n'oubliez pas que vous avez la possibilité de suivre l'état de votre commande sur votre espace client rubrique,
+  <b>historique commande</b>. Vous pouvez aussi modifier vos données ou obtenir des informations relatives à vos commandes. <br />
+</p>
+<p> Vous pouvez aussi nous contacter à travers divers moyens. <br /><br />
+  <h4 class="navbar navbar-inverse">Nous contacter par email </h4>
+  L'adresse de contact Comores En Ligne:
+  
+  <ul>
+    <li><strong>contact.comores.en.ligne@gmail.com</strong></li>
+  </ul>
+</p>
+<p> <h4 class="navbar navbar-inverse">Nous contacter par téléphone</h4>
+				       
+  Nous sommes également joignable par téléphone de 17h00 jusqu'à 00h00 au numéro suivant.<br />
+  <ul>
+    <li><strong>Maoulida Saandi</strong>:         07 66 59 87 57 </li>
+    <li><strong>Nirsoih Losri Ibrahima</strong>: 06 50 73 05 31 </li>
+  </ul>
+</p>
+<p><h4 class="navbar navbar-inverse">Nous contacter par courrier postale</h4>
+  L'adresse postale de Comores En Ligne
+  <ul>
+    <li>M. IBRAHIMA NIRSOIH LOSRI</li>
+    <li>45 RUE DE FONTAURY</li>
+    <li>87100 LIMOGES<li>
+  </ul>
+</p>
+<p><h4 class="navbar navbar-inverse">Nous contacter ou nous suivre sur facebook</h5>
+<br />
+
+<div class="container-fluid image">
+  <div class="row">
+  Suivez nous sur les réseau sociaux pour être au courant des derniers nouveautés de Comores En Ligne
+  <a target="_blank" href="{% url 'contact:facebook' %}"><img src="{% static 'yous/image/facebook.png' %}" alt="facebook.fr/comoresEnLigne"></a>
+  </div>
+</div>
+</p>
+<br />
+<p><br />
+  L'Equipe <strong>Comores En Ligne</strong> vous remercie de votre viste <p>
+</div>
+</div>
+{% endblock content %}
+

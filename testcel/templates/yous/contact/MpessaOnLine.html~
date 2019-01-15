@@ -1,0 +1,113 @@
+{% extends "yous/layout_2_col.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block navigation %}
+{% include "yous/tina/partials/nav_primary.html" %}
+{% endblock %}
+{% block header %}
+<h3 class="navbar navbar-inverse"> Alors, MpessaOnLine ! Comment ça marche?</h3>
+{% endblock %}
+
+{% block column_left %}
+<div class="container-fluid image">
+     <div class="row">
+ <a href="{% url 'contact:MpessaOnLine' %}">
+   <img class="col-xs-12 col-sm-12" src="{% static "yous/image/img/mpessaonline2.jpg" %}" alt=" Comores En Ligne"></a>
+ 
+     </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+ <div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3 align="center"><font color="#3333ff">
+    C'est quoi déjà MpessaOnLine ?</font>
+</h3>
+ 
+<p >
+  C'est tout simplement un moyen de
+paiement spécifique à notre site Comores En Ligne. Son objectif est
+de permettre à toute personne de faire des achats sur notre site
+même sans carte bancaire. Vous nous donnez votre argent en liquide,
+par virement ou par chèque et nous le rendons disponible sur votre
+Compte MpessaOnLine. Et vous pouvez acheter ce que vous voulez sur
+notre site. Ainsi, on peut être à Anjouan et offrir un cadeau à
+  quelqu’un qui est à Moheli ou Ngazidja sans problème.</p>
+
+<h3  align="center" >
+  <font color="#3333ff">
+    Comment faire pour avoir un compte MpessaOnLine alors? </font>
+</h3>
+<p >
+  Très facile!</p>
+<p  >
+  i. Si vous êtes aux Comores,  alors
+il faut tout simplement<a href="{% url 'contact:contact' %}">contacter</a> l’un de nos <a href="{% url 'contact:partenaires' %}">partenaires </a>le plus proche de vous. Ensuite, vous lui donnez la somme que  vous souhaitez
+le rendre disponible en ligne. Avec votre pièce d’identité, notre
+partenaire va vous aider à ouvrir votre Compte MpessaOnLine. 
+</p>
+
+<p >
+  ii. Si vous êtes en France ou
+ailleurs dans le monde, vous nous<a href="{% url 'contact:contact' %}"> contactez</a> par l’un de nos moyens
+de communication, nous récupérons la somme que vous voulez rendre
+disponible, et nous vous ouvrons un compte MpessaOnline pour acheter
+  ce que vous voulez sur notre site.</p>
+
+<h3   align="center">
+  <font color="#3333ff">Ok, super&nbsp;! Mais Comment
+    payer en ligne&nbsp;?</font></h3>
+
+<p  align="left">
+  Encore très facile comme à chaque
+  fois avec nous&nbsp;!</p>
+
+<p   align="left">
+  Lorsque vous êtes sur le point de
+choisir votre mode de paiement, choisissez Payer avec votre Compte
+MpessaOnline. Cela s’effectue en 3 étapes&nbsp;: 
+</p>
+
+<p   align="left">
+  <font color="#800000">   <b>Étape 1</b></font></p>
+
+<p   align="left">
+  Vous cochez votre compte et confirmez
+  votre numéro de compte.</p>
+
+<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center" src="{% static "yous/image/etap1_mpessaOnline.png" %}" alt=" Comores En Ligne">
+
+
+
+<p  align="left">
+  <font color="#800000"><b>Étape2&nbsp;:</b></font></p>
+
+
+
+<p   align="left">
+  Confirmez le montant de la commande. A
+cet étape, vous pouvez modifier le montant de la commande pour payer
+avec plusieurs compte si vous en avez.</p>
+<p align="left"><br/>
+<br/>
+
+</p>
+
+<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center" src="{% static "yous/image/etape2_messaOnline.png" %}" alt=" Comores En Ligne">
+<p  align="left">
+  <font color="#800000"><b>Étape 3&nbsp;:</b></font></p>
+
+
+
+<p   align="left">
+  Vous confirmez le prélèvement et
+continuez 
+</p>
+<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center" src="{% static "yous/image/etap3_messaOnline.png" %}" alt=" Comores En Ligne">
+
+</div>
+ 
+{% endblock content %}

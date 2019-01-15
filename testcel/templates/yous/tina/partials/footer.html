@@ -1,0 +1,102 @@
+{% load i18n %}
+{% load staticfiles %}
+
+<footer class="footer container-fluid">
+    {% block footer %}
+    {% comment %}
+    Voici le footer 
+            Could be used for displaying links to privacy policy, terms of service, etc.
+    We have a CSS class defined:
+    {% endcomment %}
+
+   <h5>
+      <div></div><div> </div> 
+    </h5>
+   
+   <br /> <br />
+   <div class="container-fluid image">
+     <div class="row">
+       <a href="/catalogue/category/taxe-phone_7/">
+	 <img  class="col-xs-12 col-ms-12 " src="{% static "yous/image/fichier1.jpeg" %}" alt=" Comores En Ligne">
+       </a>
+     </div>
+   </div>
+   <br /> <br />
+
+   
+   <div class="navbar navbar-inverse ">
+     <div class="container-fluid" >
+       <div class="row">
+	 <ul class="col-xs-12 col-ms-12 col-md-3 col-lg-3">
+	     <li class="div1">Qui sommes nous?</li>
+	     <li><a href="{% url 'contact:nous' %}">
+		 Des jeunes comoriens</a></li>
+	     <li><a href="{% url 'contact:partenaires' %}">
+		 Nos partenaires</a></li>
+	     <li><a href="{% url 'contact:legales' %}">
+		 Mentions légales</a></li>
+	     <li><a href="{% url 'contact:cg' %}">
+		 Conditions générales</a></li>
+	   </ul>
+	   <ul  class="col-xs-12 col-ms-12 col-md-3 col-lg-3">
+	     <li class="div1"> Nos prouits et services  pour les Comores</li>
+	     
+	     <li><a href="/catalogue/category/ngazidja/dayma-compagny_32/">
+		 Achat de matériels de constructions</a> </li>
+	     <li><a href="/catalogue/category/ngazidja/comores-en-ligne-moroni_2/">
+		 Achat de produits alimentaires</a></li>
+	     <li><a href="/catalogue/category/taxe-phone_7/">
+		Achat recharge Crédit télécoms</a></li>
+	     <li><a href="{% url 'contact:chouhouli' %}">
+		Espace machouhouli</a></li>
+	   </ul>
+	   <ul  class="col-xs-12 col-ms-12 col-md-3 col-lg-3">
+	     <li class="div1">Besoins d'aide?</li>
+      	     <li><a href="{% url 'contact:MpessaOnLine' %}">Compte MpessaOnLine</a></li>
+	     <li><a href="{% url 'contact:contact' %}">Nos tarifs</a></li>
+	     <li><a href="{% url 'contact:contact' %}">Faire une réclamation</a></li>
+	     <li><a href="{% url 'contact:contact' %}">Nous contacter</a></li>
+	   </ul>
+	   <ul  class="col-xs-12 col-ms-12 col-md-3 col-lg-3">
+	     <li class="div1">Siège social</li>
+    	     <li>45 Rue de Fontaury</li>
+	     <li>87100 Limoges, France</li>
+	     <li>SIRET: 83520740800013</li>
+	     <li>contact.comores.en.ligne@gmail.com</li>
+	   </ul>
+       </div>
+     </div>
+   </div>
+      <br /> <br />
+   <ul class="footer_links inline">
+     
+     <p>
+       <a href="{% url 'promotions:home' %}">Accueil</a> |<a href="{% url 'contact:nous' %}">A propos de nous</a>| <a href="{% url 'contact:contact' %}"> Contactez nous<a/>|
+	 <a href="{% url 'contact:legales' %}">Mentions légales</a> |<a href="{% url 'contact:cg' %}">Conditions générales</a> |
+	 <a href="{% url 'contact:services' %}">Nos produits & services</a> | <a href="{% url 'contact:MpessaOnLine' %}">Compte MpessaOnLine</a><br /> <br />
+
+	 <div class="navbar navbar- transparent image">
+	   <p>Suivez <strong>Comores En Ligne</strong> sur les réseaux sociaux:
+	     <a target="_blank" href="{% url 'contact:facebook' %}">  <img src="{% static 'yous/image/facebook.png' %}" alt="facebook.fr/comoresEnLigne"></a>
+
+
+	     <a target="_blank" href="{% url 'contact:youtube' %}"><img src="{% static 'yous/image/youtube.jpg' %}" alt="comores En Ligne"></a>
+	     
+	   </p>
+	 </div>
+	 <div class="navbar navbar-inverse">
+	   &copy Copyright {% now "Y" %} &middot; <strong>Comores En Ligne</strong> &middot; Tous droits réservés
+	   
+         </div>
+	 
+	 
+      </p>
+    
+      
+    
+      
+    </ul>
+
+    
+    {% endblock %}
+</footer>

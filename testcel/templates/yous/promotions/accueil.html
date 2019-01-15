@@ -1,0 +1,157 @@
+{% extends "yous/accueil_2_layout.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% load basket_tags %}
+{% load promotion_tags %}
+{% load category_tags %}
+{% load product_tags %}
+{% load i18n %}
+
+
+
+{% block navigation %}
+{% include "yous/tina/partials/nav_primary.html" %}
+{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+
+{% block header %}
+
+<div id="carousel-comoresEnligne" class="carousel slide" data-ride="carousel">
+  <!--data-ride=chargement de data defilant-->
+  <!-- Indicateurs -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-comoresEnligne" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-comoresEnligne" data-slide-to="1"></li>
+    <li data-target="#carousel-comoresEnligne" data-slide-to="2"></li>
+    <li data-target="#carousel-comoresEnligne" data-slide-to="3"></li>
+    <li data-target="#carousel-comoresEnligne" data-slide-to="4"></li>
+    <li data-target="#carousel-comoresEnligne" data-slide-to="5"></li>
+   <!-- <li data-target="#carousel-comoresEnligne" data-slide-to="6"></li>-->
+    
+  </ol>
+
+  <!-- Wrapper for slides   -->
+  <div class="carousel-inner image" role="listbox">
+    <!--
+    <div class="item active" id ="slide1">
+      <a href="/catalogue/category/ngazidja/offre-ramadhoine_34/">
+	<img src="{% static "yous/image/ramadan2.jpg" %}" alt=" Comores En Ligne"></a>
+      <div class="carousel-caption">
+        <p>Comores En Ligne 	 </p>
+      </div>
+    </div>-->
+
+
+    <div class="item active" id ="slide2">
+      <a href="{% url 'catalogue:index' %}">
+	<img src="{% static "yous/image/accuil comores en ligne.jpg" %}" alt=" Comores En Ligne"></a>
+      <div class="carousel-caption">
+        <p></p>
+      </div>
+    </div>
+    <div class="item " id ="slide3">
+      <a href="{% url 'catalogue:index' %}">
+	<img src="{% static "yous/image/riz_comores.png" %}" alt=" Comores En Ligne"></a>
+      <div class="carousel-caption">
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="item" id="slide4">
+      <a href="/catalogue/category/ngazidja/comores-en-ligne-moroni/produits-laitiers_11/">
+	<img src="{% static "yous/image/petit_dejeuner.jpeg" %}" alt=" Comores En Ligne"></a>
+      <div class="carousel-caption">
+	<p></p>
+      </div>
+    </div>
+    
+    <div class="item" id="slide5">
+      <a href="{% url 'contact:MpessaOnLine' %}">
+	<img src="{% static "yous/image/mpessaonline1.jpg" %}" alt=" Comores En Ligne"></a>
+      <div class="carousel-caption">
+        <p> </p>
+      </div>
+    </div>
+   <div class="item" id="slide6">
+      <a href="{% url 'contact:chouhouli' %}" role="button">
+	<img src="{% static "yous/image/gigoz.png" %}" alt=" Comores En Ligne"></a>
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+    <div class="item" id="slide7">
+      <a href="/catalogue/category/taxe-phone_7/">
+	<img src="{% static "yous/image/telecoms.jpg" %}" alt=" Comores En Ligne"></a>
+      <div class="carousel-caption">
+        <p></p>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+  
+  <!-- Controls
+       
+       <a class="left carousel-control" href="#carousel-comoresEnligne" role="button" data-slide="prev">
+	 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	 <span class="sr-only">Précédent</span>
+       </a>
+       <a class="right carousel-control" href="#comoresEnligne" role="button" data-slide="next">
+	 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	 <span class="sr-only">Suivant</span>
+       </a> -->
+  
+  <div id="carousel-comoresEnligne" class="carousel slide" data-ride="carousel" data-interval="1600">
+  </div>
+</div>
+
+{% endblock %}
+
+{% block column_left %}
+
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<br /> <br />
+<div class="container-fluid image">
+<!--  <div class="row">
+    <a  href="/catalogue/category/ngazidja/offre-ramadhoine_34/">
+      <img  class="col-xs-12 col-ms-12 col-md-12 col-lg-12 " src="{% static "yous/image/ramadan1.jpg" %}" alt=" Comores En Ligne"></a>
+   
+  </div>
+</div>-->
+<br /> <br />
+<h3 class="navbar navbar-inverse">
+  <b>Comment ça marche ?</b>
+</h3>
+
+
+<br /> <br />
+<div class="container-fluid image">
+  <div class="row">
+    <a  href="{% url 'catalogue:index' %}">
+      <img  class="col-xs-12 col-ms-12 col-md-6 col-lg-6 " src="{% static "yous/image/tuto1.jpg" %}" alt=" Comores En Ligne"></a>
+    <a  href="{% url 'catalogue:index' %}">
+
+      <img  class="col-xs-12 col-ms-12 col-md-6 col-lg-6 " src="{% static "yous/image/tuto2.jpg" %}" alt=" Comores En Ligne"></a>
+
+    <a  href="{% url 'catalogue:index' %}">
+      <img  class="col-xs-12 col-ms-12 col-md-6 col-lg-6 " src="{% static "yous/image/tuto3.jpg" %}" alt=" Comores En Ligne"></a>
+
+    <a  href="{% url 'catalogue:index' %}">
+      <img  class="col-xs-12 col-ms-12 col-md-6 col-lg-6 " src="{% static "yous/image/tuto4.jpg" %}" alt=" Comores En Ligne"></a>
+  </div>
+</div>
+
+<br /> <br />
+
+{% endblock content %}
+

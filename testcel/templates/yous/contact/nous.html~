@@ -1,0 +1,123 @@
+{% extends "yous/layout_2_col.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block navigation %}
+{% include "yous/tina/partials/nav_primary.html" %}
+{% endblock %}
+
+ 
+
+{% block header %}
+<h3 class="navbar navbar-inverse"> Le projet Comores En Ligne</h3>
+{% endblock %}
+
+{% block column_left %}
+<div class="container-fluid image">
+  <div class="row">
+
+  <a  href="{% url 'catalogue:index' %}">
+    <img  class="col-xs-12 col-ms-12 " src="{% static "yous/image/img/marketing.jpg" %}" alt=" Comores En Ligne"></a>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+<h1 align="center"><font color="#6666ff"><font size="4" style="font-size: 16pt"><b>
+	C'est quoi Comores En Ligne au juste?</b></font></font></h1>
+
+<img  class="col-xs-12 col-ms-12" src="{% static "yous/image/comores_en_ligne.jpg" %}" alt=" Comores En Ligne">
+
+
+<p>Comores En Ligne est un projet imaginé par des jeunes comoriens
+  pour soutenir la diaspora comorienne dans le monde. Comores En Ligne
+  a pour ambition, de rendre disponible en ligne tous les produits et
+  services qui se trouvent aux Comores. L’objectif étant de
+  permettre à tout comorien, dans le monde, de pouvoir agir aux
+  Comores à travers notre plateforme comme s’il y était.</p>
+<p>Au stade actuel du projet, nous allons rendre disponible en ligne
+  pour la diaspora, les produits alimentaires, les matériaux de
+  construction, les recharge du crédit,  etc. Cela se fera a travers
+  des partenariats avec les commerçants locaux.x Ces produits seront
+  seulement disponible aux Comores.
+</p>
+<p> A travers ce projet, la diaspora réduira les coûts liés au
+  transfert d’argent et le risque des écarts des familles : «
+  L’argent envoyé n’était pas suffisant ! » ; sans compter le
+  gain de temps engendré par le fait de pouvoir faire ses courses
+  depuis son mobile ou ordinateur tout en restant confortablement au
+  chaud sur son canapé à la maison.
+</p>
+<p align="center"><font color="#6666ff"><font size="4" style="font-size: 16pt"><b>
+	Origine et objectif du projet Comores En Ligne</b></font></font></p>
+
+<p>Nous, Comoriens de l’étranger, sommes très attachés à nos
+  proches qui résident aux Comores. Nous dépensons une grande partie
+  de nos revenus pour subvenir à leurs besoins. Rien qu’en 2013, le
+  rapport de la FMI a montré que la diaspora comorienne a envoyé plus
+  de 130 millions d’euro aux Comores.
+</p>
+<p>Malgré cette volonté, nous rencontrons plusieurs problèmes qui
+  nous font perdre beaucoup de temps et d’argent. Entre autres
+  problèmes, voici les principaux :
+</p>
+<ul>
+  <li/>
+  <p>Les frais de transfert d’argent sont de plus en plus
+    onéreux,
+  </p>
+  <li/>
+  <p>Les déplacements et la quête pour envoyer de l’argent
+    restent très coûteux en temps,</p>
+  <li/>
+  <p> L’argent envoyé est parfois perdu ou utilisé pour
+    d’autres fins ; la finalité étant d’en envoyer encore plus «
+    l’argent n’a pas été suffisant »,</p>
+  <li/>
+  <p> Les fonds envoyés pour payer les matériaux de
+    construction ont servi pour le mariage du voisin ; il en résulte
+    donc un nouvel envoi qui n’est certainement pas garanti à être
+    utilisé pour le besoin initial.</p>
+</ul>
+
+<p> C’est à travers ces observations vécu par la diaspora que
+  Comores En Ligne a vu le jour.  Notre objectif est donc de leur
+  permettre d’avoir le contrôle sur leur argent à tout moment. Au
+  lieu de faire un transfert d’argent avec des frais assez
+  conséquents pour le petit ou grand machouhouli, pour payer à manger
+  à la maman, ou pour payer divers produits, et cela avec les risques
+  cités ci-dessus, nous offrons la possibilité de réaliser des
+  achats qui seront livrés par nos soins aux Comores. Le seul
+  prérequis étant un accès à internet. Ce qui n’est plus une
+  limite dans le monde connecté que nous vivons aujourd’hui.
+</p>
+<p align="center"><font color="#6666ff"><font size="4" style="font-size: 16pt"><b>
+	Comment ça marche&nbsp;?</b></font></font></p>
+<p>Restez confortablement chez vous sur le canapé devant la télé,
+  ou baladez-vous tout simplement dans les rues de la ville tout en
+  faisant vos courses  votre téléphone ou sur votre ordinateur. C’est
+  un véritable gain de temps et surtout d’argent économisé pour la
+  diaspora.
+</p>
+<p>Comores En Ligne vous offre plusieurs moyens de paiement :
+</p>
+<ul>
+  <li/>
+  <p>Paiement avec carte bancaire un compte PayPal ou sans
+    compte PayPal</p>
+  <li/>
+  <p>Paiement par chèque avec <b>MpessaOnLine </b>
+  </p>
+  <li/>
+  <p>Paiement par virement avec <b>MpessaOnLine</b></p>
+  <li/>
+  <p>Paiement avec de l’argent liquide avec <b>MpessaOnLine </b>
+  </p>
+</ul>
+<p>
+  Pour plus d’informations sur MpessaOnLine, cliquez <a href="{% url 'contact:MpessaOnLine' %}">ici MpessaOnLine</a></p>
+
+{% endblock content %}
+

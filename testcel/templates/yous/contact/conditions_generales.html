@@ -1,0 +1,26 @@
+{% extends "yous/layout_2_col.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block navigation %}
+{% include "yous/tina/partials/nav_primary.html" %}
+{% endblock %}
+
+{% block column_left %}
+<div class="container-fluid image">
+  <div class="row">
+<a href="{{ homepage_url }}">
+
+  <img  class="col-xs-12 col-sm-12" src="{% static "yous/image/logo_comores_en_ligne.png" %}" alt=" Comores En Ligne">
+</a>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<h1> Bientôt disponibles</h1>
+<h3>Nous avons déjà les autorisations administratives pour nos services</h3>
+
+
+{% endblock content %}

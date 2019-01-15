@@ -1,0 +1,113 @@
+{% extends "yous/layout_2_col.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block navigation %}
+{% include "yous/tina/partials/nav_primary.html" %}
+{% endblock %}
+
+
+
+
+
+
+{% block header %}
+<h3 class="navbar navbar-inverse"> Nos partenaires</h3>
+{% endblock %}
+
+{% block column_left %}
+<div class="container-fluid image">
+  <div class="row">
+
+  <a  href="{% url 'catalogue:index' %}">
+    <img  src="{% static "yous/image/img/marketing.jpg" %}" alt=" Comores En Ligne"></a>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<h3></h3>
+
+<p align="center"><font color="#6666ff"><font size="5" style="font-size: 18pt"><b>Alors,
+	que c’est qu’un partenaire au sens de Comores En Ligne&nbsp;?</b></font></font></p>
+<p>Un partenaire de Comores En Ligne est un Commerçant qui mets son
+  magasin en ligne sur notre site et dont ses produits ou services sont
+  disponibles aux Comores. Le partenaire disposera d’un espace
+  personnel pour gérer son magasin Il mettra ses produits en ligne,
+  aura la gestion de son stock, et travaillera de façon indépendante
+  comme si il disposait son propre site internet. De cette façon, il
+  peut vendre ses produits en ligne autant qu’il peut les vendre
+  localement sans le moindre problème de stock.
+</p>
+<p align="center"><font color="#6666ff"><font size="4" style="font-size: 16pt"><b>Comment
+	devenir partenaire&nbsp;?</b></font></font></p>
+<p>Pour devenir partenaire, il faut tout d’abord être commerçant,
+  ensuite accepter nos conditions générales de vente, et nous
+  contacter pour lui créer son espace partenaire où il pourra mettre
+  son magasin en ligne et le gérer comme il le voudrait. Nous avons
+  simplifié le plus possible l’interface de gestion de
+  l’administration l’espace partenaire.</p>
+
+<p><font color="#6666ff"><b>Nos partenaires actuels </b></font>
+</p>
+<p align="center"><b><strong>Comores En Ligne</strong> Moroni – Coulée</b></p>
+
+<div class="image">
+  <a  href="{% url 'catalogue:index' %}">
+    <img  src="{% static "yous/image/riz.png" %}" alt=" Comores En Ligne"></a>
+</div>
+
+<p align="center" style="margin-left: 0cm">Comores En Ligne Moroni – Coulée est
+  un magasin d’alimentation générales. On peut acheter en détail
+  ou en gros.
+</p>
+
+<p style="margin-left: 2cm"><b>Adresse du magasin&nbsp;:</b></p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4"  style="margin-left: 4cm">
+      Moroni – Coulée, à côté de l'Ecole Privé Univers.
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+      <b>Tel</b>&nbsp;: +269 352 48 20 
+    </div>
+  </div>
+</div>
+<br /><br />
+<p style="margin-left: 2cm"> <b>Gérant du magasin&nbsp;:</b></p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4"  style="margin-left: 4cm">
+
+      <font color="#00000"> Maoulida Mouandhu </font>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4"  style="margin-left: 0cm">
+
+      <b> Tel</b>&nbsp;:  +269 492 24 07
+    </div>
+  </div>
+</div>
+
+<br /><br />
+
+<p style="margin-left: 2cm"> <b>Heure d’ouverture&nbsp;:</b></p>
+
+<div class="container">
+  <div class="row">
+    <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-4"  style="margin-left: 4cm">
+      <li> Lundi&nbsp;: 7h30 à 17h30</li>
+      <li>Mardi&nbsp;: 7h30 à 17h30</li>
+      <li>Mercredi&nbsp;: 7h30 à 17h30</li>
+    </ul>
+    <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+      <li>Jeudi&nbsp;: 7h30 à 17h30</li>
+      <li>Vendredi&nbsp;: 7h30 à 11h00 et 15h00 à 17h30</li>
+      <li>Samedi&nbsp;: 7h30 à 17h30</li>
+    </ul>
+  </div>
+</div>
+
+
+{% endblock content %}
